@@ -37,9 +37,28 @@ body {
 .nav-menu li {
   padding: 1em;
   list-style-type: none;
-  text-decoration: none;
 }
+
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .concert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto;
+} */
 
 .concert-crowd {
   width: 100%;
 }
+
+.concert > .description {
+    border: 1px solid black;
+    color: white;
+    resize: both;
+    overflow: auto;
+  }
