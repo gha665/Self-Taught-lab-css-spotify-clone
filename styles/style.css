@@ -15,18 +15,29 @@ html {
 }
 
 body {
-  margin: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+main {
+  width: 100%;
+}
+
+/*** Navbar  ***/
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
+  width: 100%;
+  z-index: 1;
 }
 
 #nav-logo {
-  height: 5em;
-  padding: 1em 2em;
+  height: 5rem;
+  padding: 1em 1em;
 }
 
 .nav-menu {
@@ -43,22 +54,16 @@ body {
   text-decoration: none;
   color: black;
 }
-
-/* .concert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    resize: both;
-    overflow: auto;
-} */
+/*** End of Navbar ***/
 
 .concert-crowd {
-  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
-.concert > .description {
-    border: 1px solid black;
-    color: white;
-    resize: both;
-    overflow: auto;
-  }
+.concert-crowd img {
+  width: 100%;
+}
